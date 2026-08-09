@@ -1344,9 +1344,12 @@ footer p {
         <div class="buttons">
 
             <a
-                href="Lovepreet-Singh-Resume.png"
+                href="./Lovepreet-Singh-Resume.png"
                 class="btn primary"
+                target="_blank"
+                rel="noopener"
                 download="Lovepreet-Singh-Resume.png"
+                aria-label="Download Lovepreet Singh Resume"
             >
                 ↓ &nbsp; Download Resume
             </a>
@@ -1359,6 +1362,13 @@ footer p {
             </a>
 
         </div>
+
+        <p id="resume-note"
+           style="display:none; margin-top:14px; color:#8db7ff; font-size:12px;">
+            Resume file not found. Upload
+            <strong>Lovepreet-Singh-Resume.png</strong> to the same GitHub
+            repository folder as <strong>index.html</strong>.
+        </p>
 
     </div>
 
@@ -2158,6 +2168,29 @@ footer p {
 
 </footer>
 
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const resumeLink = document.querySelector(
+        'a[download="Lovepreet-Singh-Resume.png"]'
+    );
+    const resumeNote = document.getElementById("resume-note");
+
+    if (!resumeLink || !resumeNote) return;
+
+    fetch("./Lovepreet-Singh-Resume.png", {
+        method: "HEAD",
+        cache: "no-store"
+    }).then(function (response) {
+        if (!response.ok) {
+            resumeNote.style.display = "block";
+        }
+    }).catch(function () {
+        resumeNote.style.display = "block";
+    });
+});
+</script>
 
 </body>
 </html>
