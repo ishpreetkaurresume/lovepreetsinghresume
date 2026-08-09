@@ -1,2163 +1,2500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lovepreet Singh | Freight Dispatcher</title>
+    <meta charset="UTF-8">
 
-<meta name="description"
-content="Lovepreet Singh - Freight Dispatcher, Logistics Coordinator and Dispatch Operations Professional.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description"
+          content="Lovepreet Singh - Freight Dispatcher, Logistics Coordinator and Dispatch Operations Professional.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color"
+          content="#030817">
 
-<style>
+    <title>Lovepreet Singh | Freight Dispatcher</title>
 
-/* =====================================================
-   ROOT COLORS
-===================================================== */
 
-:root {
-    --bg-dark: #030817;
-    --bg-blue: #06132d;
-    --royal-blue: #123b7a;
-    --blue: #1e5dcc;
-    --bright-blue: #3d82ff;
-    --light-blue: #8db7ff;
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
-    --white: #f5f8ff;
-    --text: #c7d2e6;
-    --muted: #8c9ab2;
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    --card: rgba(13, 35, 75, 0.48);
-    --border: rgba(110, 160, 255, 0.18);
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    --gold: #d8b76a;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
 
-/* =====================================================
-   RESET
-===================================================== */
+    <!-- =====================================================
+         STYLES
+    ====================================================== -->
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
 
-html {
-    scroll-behavior: smooth;
-}
+        /* =================================================
+           ROOT COLORS
+        ================================================= */
 
-body {
-    font-family: "Inter", sans-serif;
-    color: var(--white);
-    background: var(--bg-dark);
-    line-height: 1.7;
-    overflow-x: hidden;
-}
+        :root {
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+            --bg-dark: #030817;
 
+            --bg-blue: #06132d;
 
-/* =====================================================
-   BACKGROUND
-===================================================== */
+            --royal-blue: #123b7a;
 
-body::before {
-    content: "";
+            --blue: #1e5dcc;
 
-    position: fixed;
+            --bright-blue: #3d82ff;
 
-    inset: 0;
+            --light-blue: #8db7ff;
 
-    z-index: -3;
+            --white: #f5f8ff;
 
-    background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(29, 87, 180, 0.25),
-            transparent 32%
-        ),
+            --text: #c7d2e6;
 
-        radial-gradient(
-            circle at 85% 25%,
-            rgba(35, 100, 220, 0.16),
-            transparent 30%
-        ),
+            --muted: #8c9ab2;
 
-        radial-gradient(
-            circle at 70% 80%,
-            rgba(19, 55, 120, 0.25),
-            transparent 35%
-        ),
+            --card: rgba(13, 35, 75, 0.48);
 
-        linear-gradient(
-            135deg,
-            #020611,
-            #06132d 50%,
-            #020611
-        );
-}
+            --border: rgba(110, 160, 255, 0.18);
 
+            --shadow: rgba(0, 0, 0, 0.35);
+        }
 
-body::after {
-    content: "";
 
-    position: fixed;
+        /* =================================================
+           RESET
+        ================================================= */
 
-    inset: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    z-index: -2;
 
-    pointer-events: none;
+        html {
+            scroll-behavior: smooth;
+        }
 
-    background-image:
-        linear-gradient(
-            rgba(255,255,255,0.015) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,0.015) 1px,
-            transparent 1px
-        );
 
-    background-size: 70px 70px;
+        body {
 
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 85%
-    );
-}
+            font-family: "Inter", sans-serif;
 
+            color: var(--white);
 
-/* =====================================================
-   GENERAL SECTION
-===================================================== */
+            background: var(--bg-dark);
 
-section {
-    padding: 110px 8%;
-    position: relative;
-}
+            line-height: 1.7;
 
+            overflow-x: hidden;
+        }
 
-/* =====================================================
-   HERO
-===================================================== */
 
-.hero {
-    min-height: 100vh;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-    display: flex;
 
-    align-items: center;
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-    justify-content: center;
 
-    text-align: center;
+        ::selection {
+            background: #2769cf;
+            color: white;
+        }
 
-    padding: 60px 8%;
 
-    position: relative;
+        /* =================================================
+           BACKGROUND
+        ================================================= */
 
-    overflow: hidden;
-}
+        body::before {
 
+            content: "";
 
-.hero::before {
-    content: "";
+            position: fixed;
 
-    position: absolute;
+            inset: 0;
 
-    width: 650px;
+            z-index: -3;
 
-    height: 650px;
+            background:
 
-    border-radius: 50%;
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(29, 87, 180, 0.25),
+                    transparent 32%
+                ),
 
-    background: rgba(30, 93, 204, 0.14);
+                radial-gradient(
+                    circle at 85% 25%,
+                    rgba(35, 100, 220, 0.16),
+                    transparent 30%
+                ),
 
-    filter: blur(90px);
+                radial-gradient(
+                    circle at 70% 80%,
+                    rgba(19, 55, 120, 0.25),
+                    transparent 35%
+                ),
 
-    animation: bluePulse 6s ease-in-out infinite;
-}
+                linear-gradient(
+                    135deg,
+                    #020611,
+                    #06132d 50%,
+                    #020611
+                );
+        }
 
 
-.hero-content {
-    max-width: 1000px;
+        body::after {
 
-    position: relative;
+            content: "";
 
-    z-index: 2;
+            position: fixed;
 
-    animation: heroFade 1.2s ease;
-}
+            inset: 0;
 
+            z-index: -2;
 
-.hero-tag {
-    display: inline-flex;
+            pointer-events: none;
 
-    align-items: center;
+            background-image:
 
-    gap: 8px;
+                linear-gradient(
+                    rgba(255,255,255,0.015) 1px,
+                    transparent 1px
+                ),
 
-    padding: 9px 20px;
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.015) 1px,
+                    transparent 1px
+                );
 
-    border-radius: 50px;
+            background-size: 70px 70px;
 
-    background: rgba(41, 91, 170, 0.15);
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent 85%
+                );
+        }
 
-    border: 1px solid rgba(105, 158, 255, 0.28);
 
-    color: #a9c7ff;
+        /* =================================================
+           SECTION
+        ================================================= */
 
-    font-size: 12px;
+        section {
 
-    letter-spacing: 2px;
+            position: relative;
 
-    text-transform: uppercase;
+            padding: 110px 8%;
+        }
 
-    margin-bottom: 25px;
 
-    backdrop-filter: blur(12px);
-}
+        /* =================================================
+           HERO
+        ================================================= */
 
+        .hero {
 
-.hero h1 {
-    font-family: "Poppins", sans-serif;
+            min-height: 100vh;
 
-    font-size: clamp(48px, 8vw, 96px);
+            display: flex;
 
-    line-height: 1.02;
+            align-items: center;
 
-    font-weight: 800;
+            justify-content: center;
 
-    letter-spacing: -4px;
+            text-align: center;
 
-    margin-bottom: 20px;
+            padding: 60px 8%;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ffffff 10%,
-            #b9d2ff 50%,
-            #5f94ff 100%
-        );
+            overflow: hidden;
+        }
 
-    -webkit-background-clip: text;
 
-    -webkit-text-fill-color: transparent;
-}
+        .hero::before {
 
+            content: "";
 
-.hero h2 {
-    font-size: clamp(18px, 3vw, 28px);
+            position: absolute;
 
-    font-weight: 400;
+            width: 650px;
 
-    color: #b6c8e8;
+            height: 650px;
 
-    margin-bottom: 25px;
-}
+            border-radius: 50%;
 
+            background:
+                rgba(30, 93, 204, 0.14);
 
-.hero p {
-    max-width: 780px;
+            filter: blur(90px);
 
-    margin: auto auto 35px;
+            animation:
+                bluePulse 6s ease-in-out infinite;
+        }
 
-    color: var(--muted);
 
-    font-size: 15px;
-}
+        .hero-content {
 
+            position: relative;
 
-/* =====================================================
-   BUTTONS
-===================================================== */
+            z-index: 2;
 
-.buttons {
-    display: flex;
+            max-width: 1000px;
 
-    justify-content: center;
+            animation:
+                heroFade 1.2s ease;
+        }
 
-    gap: 15px;
 
-    flex-wrap: wrap;
-}
+        .hero-tag {
 
+            display: inline-flex;
 
-.btn {
-    position: relative;
+            align-items: center;
 
-    display: inline-flex;
+            gap: 8px;
 
-    align-items: center;
+            padding: 9px 20px;
 
-    justify-content: center;
+            margin-bottom: 25px;
 
-    min-width: 195px;
+            border-radius: 50px;
 
-    padding: 14px 28px;
+            background:
+                rgba(41, 91, 170, 0.15);
 
-    border-radius: 12px;
+            border:
+                1px solid rgba(105, 158, 255, 0.28);
 
-    font-size: 13px;
+            color: #a9c7ff;
 
-    font-weight: 600;
+            font-size: 12px;
 
-    overflow: hidden;
+            letter-spacing: 2px;
 
-    transition: all 0.35s ease;
-}
+            text-transform: uppercase;
 
+            backdrop-filter: blur(12px);
+        }
 
-.btn::before {
-    content: "";
 
-    position: absolute;
+        .hero h1 {
 
-    top: 0;
+            font-family: "Poppins", sans-serif;
 
-    left: -120%;
+            font-size:
+                clamp(48px, 8vw, 96px);
 
-    width: 70%;
+            line-height: 1.02;
 
-    height: 100%;
+            font-weight: 800;
 
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,0.3),
-            transparent
-        );
+            letter-spacing: -4px;
 
-    transform: skewX(-25deg);
+            margin-bottom: 20px;
 
-    transition: 0.65s;
-}
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff 10%,
+                    #b9d2ff 50%,
+                    #5f94ff 100%
+                );
 
+            -webkit-background-clip: text;
 
-.btn:hover::before {
-    left: 140%;
-}
+            -webkit-text-fill-color: transparent;
+        }
 
 
-.btn:hover {
-    transform: translateY(-4px);
+        .hero h2 {
 
-    box-shadow:
-        0 18px 45px rgba(0,0,0,0.35);
-}
+            font-size:
+                clamp(18px, 3vw, 28px);
 
+            font-weight: 400;
 
-.btn.primary {
-    color: white;
+            color: #b6c8e8;
 
-    background:
-        linear-gradient(
-            135deg,
-            #164da0,
-            #2874e8,
-            #1850a5
-        );
+            margin-bottom: 25px;
+        }
 
-    border: 1px solid rgba(130,180,255,0.3);
 
-    box-shadow:
-        0 12px 35px rgba(20,90,200,0.25);
-}
+        .hero p {
 
+            max-width: 780px;
 
-.btn.secondary {
-    color: #c7d8f7;
+            margin: 0 auto 35px;
 
-    background:
-        rgba(255,255,255,0.045);
+            color: var(--muted);
 
-    border:
-        1px solid rgba(120,165,240,0.22);
+            font-size: 15px;
+        }
 
-    backdrop-filter: blur(12px);
-}
 
+        /* =================================================
+           BUTTONS
+        ================================================= */
 
-/* =====================================================
-   SCROLL
-===================================================== */
+        .buttons {
 
-.scroll-down {
-    position: absolute;
+            display: flex;
 
-    bottom: 30px;
+            justify-content: center;
 
-    left: 50%;
+            align-items: center;
 
-    transform: translateX(-50%);
+            gap: 15px;
 
-    color: #7185a7;
+            flex-wrap: wrap;
+        }
 
-    font-size: 10px;
 
-    letter-spacing: 3px;
+        .btn {
 
-    text-transform: uppercase;
-}
+            position: relative;
 
+            display: inline-flex;
 
-.scroll-down span {
-    display: block;
+            align-items: center;
 
-    width: 1px;
+            justify-content: center;
 
-    height: 35px;
+            min-width: 195px;
 
-    background: #5079bd;
+            padding: 14px 28px;
 
-    margin: 8px auto 0;
+            border-radius: 12px;
 
-    animation: scrollLine 1.8s infinite;
-}
+            font-size: 13px;
 
+            font-weight: 600;
 
-/* =====================================================
-   SECTION TITLES
-===================================================== */
+            overflow: hidden;
 
-.section-title {
-    text-align: center;
+            transition:
+                all 0.35s ease;
+        }
 
-    margin-bottom: 60px;
-}
 
+        .btn::before {
 
-.section-title span {
-    display: block;
+            content: "";
 
-    color: var(--light-blue);
+            position: absolute;
 
-    font-size: 11px;
+            top: 0;
 
-    letter-spacing: 3px;
+            left: -120%;
 
-    text-transform: uppercase;
+            width: 70%;
 
-    margin-bottom: 10px;
-}
+            height: 100%;
 
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.3),
+                    transparent
+                );
 
-.section-title h2 {
-    font-family: "Poppins", sans-serif;
+            transform: skewX(-25deg);
 
-    font-size: clamp(30px, 5vw, 46px);
+            transition: 0.65s;
+        }
 
-    font-weight: 700;
 
-    letter-spacing: -1px;
-}
+        .btn:hover::before {
+            left: 140%;
+        }
 
 
-.section-title p {
-    max-width: 700px;
+        .btn:hover {
 
-    margin: 14px auto 0;
+            transform:
+                translateY(-4px);
 
-    color: var(--muted);
+            box-shadow:
+                0 18px 45px
+                rgba(0,0,0,0.35);
+        }
 
-    font-size: 13px;
-}
 
+        .btn.primary {
 
-/* =====================================================
-   GLASS CARD
-===================================================== */
+            color: white;
 
-.glass-card {
-    background:
-        linear-gradient(
-            145deg,
-            rgba(18,55,115,0.42),
-            rgba(5,18,43,0.62)
-        );
+            background:
+                linear-gradient(
+                    135deg,
+                    #164da0,
+                    #2874e8,
+                    #1850a5
+                );
 
-    border:
-        1px solid var(--border);
+            border:
+                1px solid
+                rgba(130,180,255,0.3);
 
-    border-radius: 24px;
+            box-shadow:
+                0 12px 35px
+                rgba(20,90,200,0.25);
+        }
 
-    backdrop-filter: blur(22px);
 
-    -webkit-backdrop-filter: blur(22px);
+        .btn.secondary {
 
-    box-shadow:
-        0 25px 70px rgba(0,0,0,0.25);
+            color: #c7d8f7;
 
-    transition:
-        transform 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
-}
+            background:
+                rgba(255,255,255,0.045);
 
+            border:
+                1px solid
+                rgba(120,165,240,0.22);
 
-.glass-card:hover {
-    transform: translateY(-7px);
+            backdrop-filter:
+                blur(12px);
+        }
 
-    border-color:
-        rgba(92,150,255,0.35);
 
-    box-shadow:
-        0 30px 80px rgba(0,0,0,0.38),
-        0 0 30px rgba(25,91,200,0.08);
-}
+        /* =================================================
+           SCROLL INDICATOR
+        ================================================= */
 
+        .scroll-down {
 
-/* =====================================================
-   ABOUT
-===================================================== */
+            position: absolute;
 
-.about-grid {
-    max-width: 1200px;
+            bottom: 30px;
 
-    margin: auto;
+            left: 50%;
 
-    display: grid;
+            transform:
+                translateX(-50%);
 
-    grid-template-columns: 1fr 1fr;
+            color: #7185a7;
 
-    gap: 30px;
-}
+            font-size: 10px;
 
+            letter-spacing: 3px;
 
-.about-card {
-    padding: 40px;
-}
+            text-transform: uppercase;
+        }
 
 
-.about-card h3 {
-    font-family: "Poppins", sans-serif;
+        .scroll-down span {
 
-    font-size: 23px;
+            display: block;
 
-    margin-bottom: 18px;
-}
+            width: 1px;
 
+            height: 35px;
 
-.about-card p {
-    color: #a7b5ca;
+            margin: 8px auto 0;
 
-    font-size: 14px;
+            background: #5079bd;
 
-    margin-bottom: 15px;
-}
+            animation:
+                scrollLine 1.8s infinite;
+        }
 
 
-.highlight-box {
-    display: grid;
+        /* =================================================
+           SECTION TITLE
+        ================================================= */
 
-    grid-template-columns: 1fr 1fr;
+        .section-title {
 
-    gap: 14px;
+            text-align: center;
 
-    margin-top: 25px;
-}
+            margin-bottom: 60px;
+        }
 
 
-.highlight {
-    padding: 20px;
+        .section-title span {
 
-    border-radius: 16px;
+            display: block;
 
-    background:
-        rgba(50,100,180,0.08);
+            color: var(--light-blue);
 
-    border:
-        1px solid rgba(100,150,230,0.10);
-}
+            font-size: 11px;
 
+            letter-spacing: 3px;
 
-.highlight strong {
-    display: block;
+            text-transform: uppercase;
 
-    color: #8db7ff;
+            margin-bottom: 10px;
+        }
 
-    font-size: 18px;
 
-    margin-bottom: 3px;
-}
+        .section-title h2 {
 
+            font-family:
+                "Poppins",
+                sans-serif;
 
-.highlight span {
-    color: #788ba8;
+            font-size:
+                clamp(30px, 5vw, 46px);
 
-    font-size: 11px;
-}
+            font-weight: 700;
 
+            letter-spacing: -1px;
+        }
 
-/* =====================================================
-   EXPERIENCE
-===================================================== */
 
-.experience-container {
-    max-width: 1050px;
+        .section-title p {
 
-    margin: auto;
-}
+            max-width: 700px;
 
+            margin:
+                14px auto 0;
 
-.experience-card {
-    padding: 45px;
+            color: var(--muted);
 
-    position: relative;
-}
+            font-size: 13px;
+        }
 
 
-.experience-card::before {
-    content: "";
+        /* =================================================
+           GLASS CARD
+        ================================================= */
 
-    position: absolute;
+        .glass-card {
 
-    left: 0;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(18,55,115,0.42),
+                    rgba(5,18,43,0.62)
+                );
 
-    top: 35px;
+            border:
+                1px solid var(--border);
 
-    bottom: 35px;
+            border-radius: 24px;
 
-    width: 3px;
+            backdrop-filter:
+                blur(22px);
 
-    border-radius: 20px;
+            -webkit-backdrop-filter:
+                blur(22px);
 
-    background:
-        linear-gradient(
-            #4c91ff,
-            #16458d,
-            transparent
-        );
+            box-shadow:
+                0 25px 70px
+                rgba(0,0,0,0.25);
 
-    box-shadow:
-        0 0 15px rgba(60,130,255,0.45);
-}
+            transition:
+                transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+        }
 
 
-.experience-header {
-    display: flex;
+        .glass-card:hover {
 
-    justify-content: space-between;
+            transform:
+                translateY(-7px);
 
-    gap: 20px;
+            border-color:
+                rgba(92,150,255,0.35);
 
-    flex-wrap: wrap;
+            box-shadow:
+                0 30px 80px
+                rgba(0,0,0,0.38),
 
-    margin-bottom: 25px;
-}
+                0 0 30px
+                rgba(25,91,200,0.08);
+        }
 
 
-.experience-header h3 {
-    font-family: "Poppins", sans-serif;
+        /* =================================================
+           ABOUT
+        ================================================= */
 
-    font-size: 25px;
-}
+        .about-grid {
 
+            max-width: 1200px;
 
-.company {
-    color: #80adff;
+            margin: auto;
 
-    font-size: 13px;
+            display: grid;
 
-    margin-top: 4px;
-}
+            grid-template-columns:
+                repeat(2, 1fr);
 
+            gap: 30px;
+        }
 
-.current {
-    height: fit-content;
 
-    padding: 7px 15px;
+        .about-card {
 
-    border-radius: 50px;
+            padding: 40px;
+        }
 
-    background:
-        rgba(49,130,255,0.10);
 
-    border:
-        1px solid rgba(90,155,255,0.25);
+        .about-card h3 {
 
-    color: #9bc0ff;
+            font-family:
+                "Poppins",
+                sans-serif;
 
-    font-size: 10px;
+            font-size: 23px;
 
-    letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
 
-    text-transform: uppercase;
-}
 
+        .about-card p {
 
-.experience-card > p {
-    color: #a7b6ca;
+            color: #a7b5ca;
 
-    font-size: 14px;
+            font-size: 14px;
 
-    margin-bottom: 25px;
-}
+            margin-bottom: 15px;
+        }
 
 
-.responsibilities {
-    display: grid;
+        .highlight-box {
 
-    grid-template-columns: 1fr 1fr;
+            display: grid;
 
-    gap: 12px 30px;
+            grid-template-columns:
+                repeat(2, 1fr);
 
-    list-style: none;
-}
+            gap: 14px;
 
+            margin-top: 25px;
+        }
 
-.responsibilities li {
-    position: relative;
 
-    padding-left: 20px;
+        .highlight {
 
-    color: #9aaac0;
+            padding: 20px;
 
-    font-size: 12px;
-}
+            border-radius: 16px;
 
+            background:
+                rgba(50,100,180,0.08);
 
-.responsibilities li::before {
-    content: "◆";
+            border:
+                1px solid
+                rgba(100,150,230,0.10);
+        }
 
-    position: absolute;
 
-    left: 0;
+        .highlight strong {
 
-    color: #4e8eff;
+            display: block;
 
-    font-size: 7px;
+            color: #8db7ff;
 
-    top: 3px;
-}
+            font-size: 18px;
 
+            margin-bottom: 3px;
+        }
 
-/* =====================================================
-   SKILLS
-===================================================== */
 
-.skills-grid {
-    max-width: 1100px;
+        .highlight span {
 
-    margin: auto;
+            color: #788ba8;
 
-    display: grid;
+            font-size: 11px;
+        }
 
-    grid-template-columns:
-        repeat(3, 1fr);
 
-    gap: 20px;
-}
+        /* =================================================
+           EXPERIENCE
+        ================================================= */
 
+        .experience-container {
 
-.skill-card {
-    padding: 30px;
-}
+            max-width: 1050px;
 
+            margin: auto;
+        }
 
-.skill-card .icon {
-    width: 50px;
 
-    height: 50px;
+        .experience-card {
 
-    display: flex;
+            padding: 45px;
 
-    align-items: center;
+            position: relative;
+        }
 
-    justify-content: center;
 
-    border-radius: 15px;
+        .experience-card::before {
 
-    color: #8db7ff;
+            content: "";
 
-    background:
-        rgba(40,100,200,0.12);
+            position: absolute;
 
-    border:
-        1px solid rgba(100,160,255,0.18);
+            left: 0;
 
-    margin-bottom: 20px;
+            top: 35px;
 
-    font-size: 20px;
+            bottom: 35px;
 
-    box-shadow:
-        0 8px 25px rgba(10,50,120,0.15);
-}
+            width: 3px;
 
+            border-radius: 20px;
 
-.skill-card h3 {
-    font-family: "Poppins", sans-serif;
+            background:
+                linear-gradient(
+                    #4c91ff,
+                    #16458d,
+                    transparent
+                );
 
-    font-size: 17px;
+            box-shadow:
+                0 0 15px
+                rgba(60,130,255,0.45);
+        }
 
-    margin-bottom: 15px;
-}
 
+        .experience-header {
 
-.skill-card ul {
-    list-style: none;
-}
+            display: flex;
 
+            justify-content:
+                space-between;
 
-.skill-card li {
-    color: #93a3ba;
+            gap: 20px;
 
-    font-size: 12px;
+            flex-wrap: wrap;
 
-    padding: 5px 0;
-}
+            margin-bottom: 25px;
+        }
 
 
-/* =====================================================
-   EDUCATION
-===================================================== */
+        .experience-header h3 {
 
-.education-container {
-    max-width: 950px;
+            font-family:
+                "Poppins",
+                sans-serif;
 
-    margin: auto;
-}
+            font-size: 25px;
+        }
 
 
-.education-card {
-    padding: 38px;
+        .company {
 
-    display: flex;
+            color: #80adff;
 
-    align-items: center;
+            font-size: 13px;
 
-    gap: 28px;
+            margin-top: 4px;
+        }
 
-    margin-bottom: 20px;
-}
 
+        .current {
 
-.education-icon {
-    min-width: 70px;
+            height: fit-content;
 
-    height: 70px;
+            padding: 7px 15px;
 
-    display: flex;
+            border-radius: 50px;
 
-    align-items: center;
+            background:
+                rgba(49,130,255,0.10);
 
-    justify-content: center;
+            border:
+                1px solid
+                rgba(90,155,255,0.25);
 
-    border-radius: 20px;
+            color: #9bc0ff;
 
-    color: #91baff;
+            font-size: 10px;
 
-    background:
-        rgba(30,90,190,0.12);
+            letter-spacing: 1px;
 
-    border:
-        1px solid rgba(100,160,255,0.18);
+            text-transform: uppercase;
+        }
 
-    font-size: 27px;
-}
 
+        .experience-card > p {
 
-.education-card h3 {
-    font-family: "Poppins", sans-serif;
+            color: #a7b6ca;
 
-    font-size: 20px;
+            font-size: 14px;
 
-    margin-bottom: 4px;
-}
+            margin-bottom: 25px;
+        }
 
 
-.institution {
-    color: #78a8ff;
+        .responsibilities {
 
-    font-size: 13px;
-}
+            display: grid;
 
+            grid-template-columns:
+                repeat(2, 1fr);
 
-.education-card p {
-    color: #8192ab;
+            gap: 12px 30px;
 
-    font-size: 12px;
+            list-style: none;
+        }
 
-    margin-top: 5px;
-}
 
+        .responsibilities li {
 
-/* =====================================================
-   STRENGTHS
-===================================================== */
+            position: relative;
 
-.strengths {
-    max-width: 1050px;
+            padding-left: 20px;
 
-    margin: auto;
+            color: #9aaac0;
 
-    display: flex;
+            font-size: 12px;
+        }
 
-    flex-wrap: wrap;
 
-    justify-content: center;
+        .responsibilities li::before {
 
-    gap: 12px;
-}
+            content: "◆";
 
+            position: absolute;
 
-.strength {
-    padding: 11px 20px;
+            left: 0;
 
-    border-radius: 50px;
+            top: 3px;
 
-    background:
-        rgba(25,70,140,0.14);
+            color: #4e8eff;
 
-    border:
-        1px solid rgba(90,145,235,0.17);
+            font-size: 7px;
+        }
 
-    color: #a7bce0;
 
-    font-size: 12px;
+        /* =================================================
+           SKILLS
+        ================================================= */
 
-    transition: 0.3s;
-}
+        .skills-grid {
 
+            max-width: 1100px;
 
-.strength:hover {
-    background:
-        rgba(35,100,210,0.20);
+            margin: auto;
 
-    border-color:
-        rgba(100,165,255,0.32);
+            display: grid;
 
-    color: white;
+            grid-template-columns:
+                repeat(3, 1fr);
 
-    transform: translateY(-3px);
-}
+            gap: 20px;
+        }
 
 
-/* =====================================================
-   CAREER OBJECTIVE
-===================================================== */
+        .skill-card {
 
-.objective {
-    max-width: 1000px;
+            padding: 30px;
+        }
 
-    margin: auto;
 
-    padding: 50px;
+        .skill-card .icon {
 
-    text-align: center;
-}
+            width: 50px;
 
+            height: 50px;
 
-.objective p {
-    color: #a8b7ca;
+            display: flex;
 
-    font-size: 14px;
+            align-items: center;
 
-    line-height: 2;
-}
+            justify-content: center;
 
+            border-radius: 15px;
 
-/* =====================================================
-   LANGUAGES
-===================================================== */
+            color: #8db7ff;
 
-.language-grid {
-    max-width: 800px;
+            background:
+                rgba(40,100,200,0.12);
 
-    margin: auto;
+            border:
+                1px solid
+                rgba(100,160,255,0.18);
 
-    display: grid;
+            margin-bottom: 20px;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+            font-size: 20px;
 
-    gap: 20px;
-}
+            box-shadow:
+                0 8px 25px
+                rgba(10,50,120,0.15);
+        }
 
 
-.language {
-    padding: 25px;
+        .skill-card h3 {
 
-    text-align: center;
+            font-family:
+                "Poppins",
+                sans-serif;
 
-    border-radius: 20px;
+            font-size: 17px;
 
-    background:
-        rgba(18,55,115,0.18);
+            margin-bottom: 15px;
+        }
 
-    border:
-        1px solid rgba(90,145,235,0.14);
 
-    transition: 0.3s;
-}
+        .skill-card ul {
 
+            list-style: none;
+        }
 
-.language:hover {
-    transform: translateY(-5px);
 
-    border-color:
-        rgba(95,155,255,0.3);
-}
+        .skill-card li {
 
+            color: #93a3ba;
 
-.language strong {
-    display: block;
+            font-size: 12px;
 
-    color: white;
+            padding: 5px 0;
+        }
 
-    margin-bottom: 5px;
-}
 
+        /* =================================================
+           EDUCATION
+        ================================================= */
 
-.language span {
-    color: #8091aa;
+        .education-container {
 
-    font-size: 11px;
-}
+            max-width: 950px;
 
+            margin: auto;
+        }
 
-/* =====================================================
-   CONTACT
-===================================================== */
 
-.contact-section {
-    padding-bottom: 80px;
-}
+        .education-card {
 
+            padding: 38px;
 
-.contact-card {
-    max-width: 900px;
+            display: flex;
 
-    margin: auto;
+            align-items: center;
 
-    padding: 55px;
+            gap: 28px;
 
-    text-align: center;
-}
+            margin-bottom: 20px;
+        }
 
 
-.contact-card > p {
-    color: #8d9db6;
+        .education-icon {
 
-    font-size: 14px;
+            min-width: 70px;
 
-    margin-bottom: 30px;
-}
+            height: 70px;
 
+            display: flex;
 
-.contact-details {
-    display: flex;
+            align-items: center;
 
-    justify-content: center;
+            justify-content: center;
 
-    flex-wrap: wrap;
+            border-radius: 20px;
 
-    gap: 12px;
+            color: #91baff;
 
-    margin-bottom: 35px;
-}
+            background:
+                rgba(30,90,190,0.12);
 
+            border:
+                1px solid
+                rgba(100,160,255,0.18);
 
-.contact-item {
-    padding: 12px 18px;
+            font-size: 27px;
+        }
 
-    border-radius: 50px;
 
-    background:
-        rgba(255,255,255,0.035);
+        .education-card h3 {
 
-    border:
-        1px solid rgba(100,150,230,0.14);
+            font-family:
+                "Poppins",
+                sans-serif;
 
-    color: #9fb0c9;
+            font-size: 20px;
 
-    font-size: 12px;
-}
+            margin-bottom: 4px;
+        }
 
 
-/* =====================================================
-   FOOTER
-===================================================== */
+        .institution {
 
-footer {
-    padding: 45px 8%;
+            color: #78a8ff;
 
-    text-align: center;
+            font-size: 13px;
+        }
 
-    background:
-        rgba(1,5,14,0.85);
 
-    border-top:
-        1px solid rgba(90,145,235,0.12);
-}
+        .education-card p {
 
+            color: #8192ab;
 
-footer h2 {
-    font-family: "Poppins", sans-serif;
+            font-size: 12px;
 
-    font-size: 24px;
-}
+            margin-top: 5px;
+        }
 
 
-.footer-line {
-    width: 55px;
+        /* =================================================
+           STRENGTHS
+        ================================================= */
 
-    height: 2px;
+        .strengths {
 
-    margin: 18px auto;
+            max-width: 1050px;
 
-    background:
-        linear-gradient(
-            90deg,
-            #174b9b,
-            #5a98ff
-        );
+            margin: auto;
 
-    box-shadow:
-        0 0 15px rgba(65,130,255,0.45);
-}
+            display: flex;
 
+            flex-wrap: wrap;
 
-footer p {
-    color: #687991;
+            justify-content: center;
 
-    font-size: 11px;
+            gap: 12px;
+        }
 
-    margin-top: 8px;
-}
 
+        .strength {
 
-/* =====================================================
-   ANIMATIONS
-===================================================== */
+            padding: 11px 20px;
 
-@keyframes heroFade {
+            border-radius: 50px;
 
-    from {
-        opacity: 0;
+            background:
+                rgba(25,70,140,0.14);
 
-        transform:
-            translateY(30px);
-    }
+            border:
+                1px solid
+                rgba(90,145,235,0.17);
 
-    to {
-        opacity: 1;
+            color: #a7bce0;
 
-        transform:
-            translateY(0);
-    }
-}
+            font-size: 12px;
 
+            transition: 0.3s;
+        }
 
-@keyframes bluePulse {
 
-    0%,
-    100% {
-        transform: scale(1);
+        .strength:hover {
 
-        opacity: 0.7;
-    }
+            background:
+                rgba(35,100,210,0.20);
 
-    50% {
-        transform: scale(1.15);
+            border-color:
+                rgba(100,165,255,0.32);
 
-        opacity: 1;
-    }
-}
+            color: white;
 
+            transform:
+                translateY(-3px);
+        }
 
-@keyframes scrollLine {
 
-    0% {
-        opacity: 0;
+        /* =================================================
+           CAREER OBJECTIVE
+        ================================================= */
 
-        transform:
-            scaleY(0.3);
+        .objective {
 
-        transform-origin: top;
-    }
+            max-width: 1000px;
 
-    50% {
-        opacity: 1;
+            margin: auto;
 
-        transform:
-            scaleY(1);
-    }
+            padding: 50px;
 
-    100% {
-        opacity: 0;
+            text-align: center;
+        }
 
-        transform:
-            scaleY(0.3);
 
-        transform-origin: bottom;
-    }
-}
+        .objective p {
 
+            color: #a8b7ca;
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+            font-size: 14px;
 
-@media (max-width: 900px) {
+            line-height: 2;
+        }
 
-    section {
-        padding: 85px 6%;
-    }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+        /* =================================================
+           LANGUAGES
+        ================================================= */
 
-    .skills-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+        .language-grid {
 
-}
+            max-width: 800px;
 
+            margin: auto;
 
-@media (max-width: 650px) {
+            display: grid;
 
-    section {
-        padding: 75px 5%;
-    }
+            grid-template-columns:
+                repeat(3, 1fr);
 
-    .hero {
-        padding: 50px 6%;
-    }
+            gap: 20px;
+        }
 
-    .hero h1 {
-        letter-spacing: -2px;
-    }
 
-    .buttons {
-        flex-direction: column;
+        .language {
 
-        align-items: center;
-    }
+            padding: 25px;
 
-    .btn {
-        width: 100%;
+            text-align: center;
 
-        max-width: 320px;
-    }
+            border-radius: 20px;
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+            background:
+                rgba(18,55,115,0.18);
 
-    .responsibilities {
-        grid-template-columns: 1fr;
-    }
+            border:
+                1px solid
+                rgba(90,145,235,0.14);
 
-    .experience-card {
-        padding: 30px 25px;
-    }
+            transition: 0.3s;
+        }
 
-    .experience-card::before {
-        display: none;
-    }
 
-    .education-card {
-        flex-direction: column;
+        .language:hover {
 
-        text-align: center;
-    }
+            transform:
+                translateY(-5px);
 
-    .language-grid {
-        grid-template-columns: 1fr;
-    }
+            border-color:
+                rgba(95,155,255,0.3);
+        }
 
-    .objective {
-        padding: 35px 25px;
-    }
 
-    .contact-card {
-        padding: 40px 25px;
-    }
+        .language strong {
 
-    .highlight-box {
-        grid-template-columns: 1fr;
-    }
+            display: block;
 
-}
+            color: white;
 
+            margin-bottom: 5px;
+        }
 
-/* =====================================================
-   SELECTION
-===================================================== */
 
-::selection {
-    background: #2769cf;
+        .language span {
 
-    color: white;
-}
+            color: #8091aa;
 
-</style>
+            font-size: 11px;
+        }
+
+
+        /* =================================================
+           CONTACT
+        ================================================= */
+
+        .contact-section {
+
+            padding-bottom: 80px;
+        }
+
+
+        .contact-card {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 55px;
+
+            text-align: center;
+        }
+
+
+        .contact-card > p {
+
+            color: #8d9db6;
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .contact-details {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-bottom: 35px;
+        }
+
+
+        .contact-item {
+
+            padding: 12px 18px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            border:
+                1px solid
+                rgba(100,150,230,0.14);
+
+            color: #9fb0c9;
+
+            font-size: 12px;
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        footer {
+
+            padding: 45px 8%;
+
+            text-align: center;
+
+            background:
+                rgba(1,5,14,0.85);
+
+            border-top:
+                1px solid
+                rgba(90,145,235,0.12);
+        }
+
+
+        footer h2 {
+
+            font-family:
+                "Poppins",
+                sans-serif;
+
+            font-size: 24px;
+        }
+
+
+        .footer-line {
+
+            width: 55px;
+
+            height: 2px;
+
+            margin: 18px auto;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #174b9b,
+                    #5a98ff
+                );
+
+            box-shadow:
+                0 0 15px
+                rgba(65,130,255,0.45);
+        }
+
+
+        footer p {
+
+            color: #687991;
+
+            font-size: 11px;
+
+            margin-top: 8px;
+        }
+
+
+        /* =================================================
+           ANIMATIONS
+        ================================================= */
+
+        @keyframes heroFade {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        @keyframes bluePulse {
+
+            0%,
+            100% {
+
+                transform:
+                    scale(1);
+
+                opacity: 0.7;
+            }
+
+            50% {
+
+                transform:
+                    scale(1.15);
+
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes scrollLine {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    scaleY(0.3);
+
+                transform-origin: top;
+            }
+
+            50% {
+
+                opacity: 1;
+
+                transform:
+                    scaleY(1);
+            }
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    scaleY(0.3);
+
+                transform-origin: bottom;
+            }
+        }
+
+
+        /* =================================================
+           RESPONSIVE
+        ================================================= */
+
+        @media (max-width: 900px) {
+
+            section {
+                padding: 85px 6%;
+            }
+
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .skills-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            section {
+                padding: 75px 5%;
+            }
+
+
+            .hero {
+                padding: 50px 6%;
+            }
+
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+
+            .buttons {
+
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+
+            .btn {
+
+                width: 100%;
+
+                max-width: 320px;
+            }
+
+
+            .skills-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .responsibilities {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .experience-card {
+
+                padding: 30px 25px;
+            }
+
+
+            .experience-card::before {
+
+                display: none;
+            }
+
+
+            .education-card {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .language-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .objective {
+
+                padding: 35px 25px;
+            }
+
+
+            .contact-card {
+
+                padding: 40px 25px;
+            }
+
+
+            .highlight-box {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+    <!-- =================================================
+         HERO
+    ================================================== -->
 
-<section class="hero" id="home">
+    <section class="hero" id="home">
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <div class="hero-tag">
-            ◆ Freight & Logistics Professional
-        </div>
-
-        <h1>
-            Lovepreet Singh
-        </h1>
-
-        <h2>
-            Freight Dispatcher • Logistics Coordinator • Dispatch Operations
-        </h2>
-
-        <p>
-            Dedicated and detail-oriented freight dispatch professional
-            currently working with Harjas Freight Dispatch Company,
-            with practical experience in shipment coordination,
-            driver communication, dispatch operations and logistics support.
-        </p>
-
-        <div class="buttons">
-
-            <a
-                href="Lovepreet-Singh-Resume.pdf"
-                class="btn primary"
-                download="Lovepreet-Singh-Resume.pdf"
-            >
-                ↓ &nbsp; Download Resume
-            </a>
-
-            <a
-                href="#contact"
-                class="btn secondary"
-            >
-                ✦ &nbsp; Let's Connect
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="scroll-down">
-
-        EXPLORE
-
-        <span></span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section id="about">
-
-    <div class="section-title">
-
-        <span>01 — About Me</span>
-
-        <h2>
-            Professional Profile
-        </h2>
-
-        <p>
-            A motivated professional combining practical freight
-            dispatch experience with ongoing higher education.
-        </p>
-
-    </div>
-
-
-    <div class="about-grid">
-
-
-        <div class="glass-card about-card">
-
-            <h3>
-                About Lovepreet
-            </h3>
-
-            <p>
-                Lovepreet Singh is a dedicated freight dispatch and
-                logistics professional currently working with
-                Harjas Freight Dispatch Company.
-            </p>
-
-            <p>
-                His professional responsibilities involve supporting
-                freight movement, coordinating loads, communicating
-                with drivers, monitoring shipment progress and
-                maintaining accurate dispatch information.
-            </p>
-
-            <p>
-                Alongside his professional career, he is currently
-                pursuing a Bachelor of Arts from Sikh Nation College,
-                demonstrating a strong commitment to continuous
-                learning and professional growth.
-            </p>
-
-        </div>
-
-
-        <div class="glass-card about-card">
-
-            <h3>
-                Professional Focus
-            </h3>
-
-            <p>
-                Focused on developing a long-term career in the
-                transportation, freight, logistics and dispatch industry.
-            </p>
-
-
-            <div class="highlight-box">
-
-                <div class="highlight">
-
-                    <strong>
-                        Dispatch
-                    </strong>
-
-                    <span>
-                        Freight Coordination
-                    </span>
-
-                </div>
-
-
-                <div class="highlight">
-
-                    <strong>
-                        Logistics
-                    </strong>
-
-                    <span>
-                        Transportation Operations
-                    </span>
-
-                </div>
-
-
-                <div class="highlight">
-
-                    <strong>
-                        Communication
-                    </strong>
-
-                    <span>
-                        Driver & Customer Coordination
-                    </span>
-
-                </div>
-
-
-                <div class="highlight">
-
-                    <strong>
-                        Growth
-                    </strong>
-
-                    <span>
-                        Continuous Learning
-                    </span>
-
-                </div>
-
+            <div class="hero-tag">
+                ◆ Freight & Logistics Professional
             </div>
 
-        </div>
 
-    </div>
-
-</section>
-
+            <h1>
+                Lovepreet Singh
+            </h1>
 
 
-<!-- =====================================================
-     EXPERIENCE
-===================================================== -->
-
-<section id="experience">
-
-    <div class="section-title">
-
-        <span>
-            02 — Experience
-        </span>
-
-        <h2>
-            Professional Experience
-        </h2>
-
-        <p>
-            Practical experience in freight dispatch and
-            transportation coordination.
-        </p>
-
-    </div>
-
-
-    <div class="experience-container">
-
-
-        <div class="glass-card experience-card">
-
-
-            <div class="experience-header">
-
-                <div>
-
-                    <h3>
-                        Freight Dispatcher
-                    </h3>
-
-                    <div class="company">
-                        Harjas Freight Dispatch Company
-                    </div>
-
-                </div>
-
-
-                <div class="current">
-                    Current Position
-                </div>
-
-            </div>
+            <h2>
+                Freight Dispatcher • Logistics Coordinator • Dispatch Operations
+            </h2>
 
 
             <p>
-                Responsible for supporting daily freight and transportation
-                operations by coordinating shipments, communicating with
-                drivers and customers, maintaining dispatch information,
-                and helping ensure that assigned loads are handled
-                efficiently and according to schedule.
+                Dedicated and detail-oriented freight dispatch professional
+                currently working with Harjas Freight Dispatch Company,
+                with practical experience in shipment coordination,
+                driver communication, dispatch operations and logistics support.
             </p>
 
 
-            <ul class="responsibilities">
-
-                <li>
-                    Coordinate daily freight dispatch operations.
-                </li>
-
-                <li>
-                    Communicate with drivers regarding load details.
-                </li>
-
-                <li>
-                    Coordinate pickup and delivery schedules.
-                </li>
-
-                <li>
-                    Monitor shipment and load progress.
-                </li>
-
-                <li>
-                    Maintain accurate dispatch records.
-                </li>
-
-                <li>
-                    Provide shipment status updates.
-                </li>
-
-                <li>
-                    Coordinate with customers and transportation teams.
-                </li>
-
-                <li>
-                    Follow up on pickup and delivery requirements.
-                </li>
-
-                <li>
-                    Assist with routine dispatch-related issues.
-                </li>
-
-                <li>
-                    Manage multiple shipments and priorities.
-                </li>
-
-                <li>
-                    Maintain digital documentation and records.
-                </li>
-
-                <li>
-                    Support smooth freight transportation operations.
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SKILLS
-===================================================== -->
-
-<section id="skills">
-
-    <div class="section-title">
-
-        <span>
-            03 — Expertise
-        </span>
-
-        <h2>
-            Core Skills
-        </h2>
-
-        <p>
-            Professional capabilities developed through practical
-            dispatch and logistics experience.
-        </p>
-
-    </div>
-
-
-    <div class="skills-grid">
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                🚛
-            </div>
-
-            <h3>
-                Freight & Dispatch
-            </h3>
-
-            <ul>
-
-                <li>Freight Dispatching</li>
-                <li>Load Coordination</li>
-                <li>Shipment Tracking</li>
-                <li>Pickup & Delivery Coordination</li>
-                <li>Dispatch Scheduling</li>
-                <li>Driver Coordination</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                ✦
-            </div>
-
-            <h3>
-                Communication
-            </h3>
-
-            <ul>
-
-                <li>Driver Communication</li>
-                <li>Customer Communication</li>
-                <li>Professional Email</li>
-                <li>Telephone Communication</li>
-                <li>Team Coordination</li>
-                <li>Status Reporting</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                ⌘
-            </div>
-
-            <h3>
-                Administration
-            </h3>
-
-            <ul>
-
-                <li>Data Entry</li>
-                <li>Documentation</li>
-                <li>Record Management</li>
-                <li>File Management</li>
-                <li>Schedule Management</li>
-                <li>Digital Record Keeping</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                ▣
-            </div>
-
-            <h3>
-                Computer Skills
-            </h3>
-
-            <ul>
-
-                <li>Microsoft Word</li>
-                <li>Microsoft Excel</li>
-                <li>Microsoft PowerPoint</li>
-                <li>MS Office</li>
-                <li>Email Management</li>
-                <li>Internet Applications</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                ◈
-            </div>
-
-            <h3>
-                Operations
-            </h3>
-
-            <ul>
-
-                <li>Time Management</li>
-                <li>Shipment Follow-Up</li>
-                <li>Transportation Coordination</li>
-                <li>Load Information Handling</li>
-                <li>Operational Support</li>
-                <li>Problem Solving</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="glass-card skill-card">
-
-            <div class="icon">
-                ✓
-            </div>
-
-            <h3>
-                Professional Skills
-            </h3>
-
-            <ul>
-
-                <li>Attention to Detail</li>
-                <li>Teamwork</li>
-                <li>Adaptability</li>
-                <li>Responsibility</li>
-                <li>Quick Learning</li>
-                <li>Working Under Pressure</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EDUCATION
-===================================================== -->
-
-<section id="education">
-
-    <div class="section-title">
-
-        <span>
-            04 — Education
-        </span>
-
-        <h2>
-            Academic Background
-        </h2>
-
-        <p>
-            Continuing academic development alongside
-            professional experience.
-        </p>
-
-    </div>
-
-
-    <div class="education-container">
-
-
-        <div class="glass-card education-card">
-
-            <div class="education-icon">
-                🎓
-            </div>
-
-            <div>
-
-                <h3>
-                    Bachelor of Arts — B.A.
-                </h3>
-
-                <div class="institution">
-                    Sikh Nation College
-                </div>
-
-                <p>
-                    Currently Pursuing
-                </p>
+            <div class="buttons">
+
+                <!-- DOWNLOAD RESUME -->
+
+                <a
+                    href="Lovepreet-Singh-Resume.png"
+                    class="btn primary"
+                    download="Lovepreet-Singh-Resume.png"
+                >
+                    ↓ &nbsp; Download Resume
+                </a>
+
+
+                <!-- CONTACT -->
+
+                <a
+                    href="#contact"
+                    class="btn secondary"
+                >
+                    ✦ &nbsp; Let's Connect
+                </a>
 
             </div>
 
         </div>
 
 
-        <div class="glass-card education-card">
+        <div class="scroll-down">
 
-            <div class="education-icon">
-                📚
-            </div>
+            EXPLORE
 
-            <div>
-
-                <h3>
-                    Senior Secondary Education — 10+2
-                </h3>
-
-                <div class="institution">
-                    School / Institution Name
-                </div>
-
-                <p>
-                    Details can be updated with exact school and year.
-                </p>
-
-            </div>
+            <span></span>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
 
 
+    <!-- =================================================
+         ABOUT
+    ================================================== -->
 
-<!-- =====================================================
-     PROFESSIONAL STRENGTHS
-===================================================== -->
-
-<section id="strengths">
-
-    <div class="section-title">
-
-        <span>
-            05 — Strengths
-        </span>
-
-        <h2>
-            Professional Strengths
-        </h2>
-
-    </div>
-
-
-    <div class="strengths">
-
-        <div class="strength">
-            Strong Communication
-        </div>
-
-        <div class="strength">
-            Attention to Detail
-        </div>
-
-        <div class="strength">
-            Time Management
-        </div>
-
-        <div class="strength">
-            Problem Solving
-        </div>
-
-        <div class="strength">
-            Team Coordination
-        </div>
-
-        <div class="strength">
-            Adaptability
-        </div>
-
-        <div class="strength">
-            Responsible
-        </div>
-
-        <div class="strength">
-            Hardworking
-        </div>
-
-        <div class="strength">
-            Quick Learner
-        </div>
-
-        <div class="strength">
-            Organized
-        </div>
-
-        <div class="strength">
-            Professional
-        </div>
-
-        <div class="strength">
-            Punctual
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CAREER OBJECTIVE
-===================================================== -->
-
-<section id="objective">
-
-    <div class="section-title">
-
-        <span>
-            06 — Career
-        </span>
-
-        <h2>
-            Career Objective
-        </h2>
-
-    </div>
-
-
-    <div class="glass-card objective">
-
-        <p>
-            To build a successful long-term career in the freight,
-            logistics, transportation and dispatch industry by applying
-            practical dispatch experience, strong communication skills,
-            organizational abilities and a commitment to continuous
-            learning. Seeking opportunities that provide professional
-            growth while allowing me to contribute effectively to
-            efficient transportation and logistics operations.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     LANGUAGES
-===================================================== -->
-
-<section id="languages">
-
-    <div class="section-title">
-
-        <span>
-            07 — Languages
-        </span>
-
-        <h2>
-            Communication
-        </h2>
-
-    </div>
-
-
-    <div class="language-grid">
-
-
-        <div class="language">
-
-            <strong>
-                Punjabi
-            </strong>
-
-            <span>
-                Native
-            </span>
-
-        </div>
-
-
-        <div class="language">
-
-            <strong>
-                Hindi
-            </strong>
-
-            <span>
-                Fluent
-            </span>
-
-        </div>
-
-
-        <div class="language">
-
-            <strong>
-                English
-            </strong>
-
-            <span>
-                Professional Working Proficiency
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section id="contact" class="contact-section">
-
-    <div class="glass-card contact-card">
-
+    <section id="about">
 
         <div class="section-title">
 
             <span>
-                08 — Contact
+                01 — About Me
             </span>
 
+
             <h2>
-                Let's Connect
+                Professional Profile
+            </h2>
+
+
+            <p>
+                A motivated professional combining practical freight
+                dispatch experience with ongoing higher education.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="glass-card about-card">
+
+                <h3>
+                    About Lovepreet
+                </h3>
+
+
+                <p>
+                    Lovepreet Singh is a dedicated freight dispatch and
+                    logistics professional currently working with
+                    Harjas Freight Dispatch Company.
+                </p>
+
+
+                <p>
+                    His professional responsibilities involve supporting
+                    freight movement, coordinating loads, communicating
+                    with drivers, monitoring shipment progress and
+                    maintaining accurate dispatch information.
+                </p>
+
+
+                <p>
+                    Alongside his professional career, he is currently
+                    pursuing a Bachelor of Arts from Sikh National College,
+                    demonstrating a strong commitment to continuous
+                    learning and professional growth.
+                </p>
+
+            </div>
+
+
+
+            <div class="glass-card about-card">
+
+                <h3>
+                    Professional Focus
+                </h3>
+
+
+                <p>
+                    Focused on developing a long-term career in the
+                    transportation, freight, logistics and dispatch industry.
+                </p>
+
+
+                <div class="highlight-box">
+
+
+                    <div class="highlight">
+
+                        <strong>
+                            Dispatch
+                        </strong>
+
+                        <span>
+                            Freight Coordination
+                        </span>
+
+                    </div>
+
+
+                    <div class="highlight">
+
+                        <strong>
+                            Logistics
+                        </strong>
+
+                        <span>
+                            Transportation Operations
+                        </span>
+
+                    </div>
+
+
+                    <div class="highlight">
+
+                        <strong>
+                            Communication
+                        </strong>
+
+                        <span>
+                            Driver & Customer Coordination
+                        </span>
+
+                    </div>
+
+
+                    <div class="highlight">
+
+                        <strong>
+                            Growth
+                        </strong>
+
+                        <span>
+                            Continuous Learning
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         EXPERIENCE
+    ================================================== -->
+
+    <section id="experience">
+
+        <div class="section-title">
+
+            <span>
+                02 — Experience
+            </span>
+
+
+            <h2>
+                Professional Experience
+            </h2>
+
+
+            <p>
+                Practical experience in freight dispatch and
+                transportation coordination.
+            </p>
+
+        </div>
+
+
+        <div class="experience-container">
+
+
+            <div class="glass-card experience-card">
+
+
+                <div class="experience-header">
+
+
+                    <div>
+
+                        <h3>
+                            Freight Dispatcher
+                        </h3>
+
+
+                        <div class="company">
+                            Harjas Freight Dispatch Company
+                        </div>
+
+                    </div>
+
+
+                    <div class="current">
+                        Current Position
+                    </div>
+
+
+                </div>
+
+
+                <p>
+                    Responsible for supporting daily freight and transportation
+                    operations by coordinating shipments, communicating with
+                    drivers and customers, maintaining dispatch information,
+                    and helping ensure that assigned loads are handled
+                    efficiently and according to schedule.
+                </p>
+
+
+                <ul class="responsibilities">
+
+
+                    <li>
+                        Coordinate daily freight dispatch operations.
+                    </li>
+
+
+                    <li>
+                        Communicate with drivers regarding load details.
+                    </li>
+
+
+                    <li>
+                        Coordinate pickup and delivery schedules.
+                    </li>
+
+
+                    <li>
+                        Monitor shipment and load progress.
+                    </li>
+
+
+                    <li>
+                        Maintain accurate dispatch records.
+                    </li>
+
+
+                    <li>
+                        Provide shipment status updates.
+                    </li>
+
+
+                    <li>
+                        Coordinate with customers and transportation teams.
+                    </li>
+
+
+                    <li>
+                        Follow up on pickup and delivery requirements.
+                    </li>
+
+
+                    <li>
+                        Assist with routine dispatch-related issues.
+                    </li>
+
+
+                    <li>
+                        Manage multiple shipments and priorities.
+                    </li>
+
+
+                    <li>
+                        Maintain digital documentation and records.
+                    </li>
+
+
+                    <li>
+                        Support smooth freight transportation operations.
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SKILLS
+    ================================================== -->
+
+    <section id="skills">
+
+        <div class="section-title">
+
+            <span>
+                03 — Expertise
+            </span>
+
+
+            <h2>
+                Core Skills
+            </h2>
+
+
+            <p>
+                Professional capabilities developed through practical
+                dispatch and logistics experience.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    🚛
+                </div>
+
+
+                <h3>
+                    Freight & Dispatch
+                </h3>
+
+
+                <ul>
+
+                    <li>Freight Dispatching</li>
+
+                    <li>Load Coordination</li>
+
+                    <li>Shipment Tracking</li>
+
+                    <li>Pickup & Delivery Coordination</li>
+
+                    <li>Dispatch Scheduling</li>
+
+                    <li>Driver Coordination</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    ✦
+                </div>
+
+
+                <h3>
+                    Communication
+                </h3>
+
+
+                <ul>
+
+                    <li>Driver Communication</li>
+
+                    <li>Customer Communication</li>
+
+                    <li>Professional Email</li>
+
+                    <li>Telephone Communication</li>
+
+                    <li>Team Coordination</li>
+
+                    <li>Status Reporting</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    ⌘
+                </div>
+
+
+                <h3>
+                    Administration
+                </h3>
+
+
+                <ul>
+
+                    <li>Data Entry</li>
+
+                    <li>Documentation</li>
+
+                    <li>Record Management</li>
+
+                    <li>File Management</li>
+
+                    <li>Schedule Management</li>
+
+                    <li>Digital Record Keeping</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    ▣
+                </div>
+
+
+                <h3>
+                    Computer Skills
+                </h3>
+
+
+                <ul>
+
+                    <li>Microsoft Word</li>
+
+                    <li>Microsoft Excel</li>
+
+                    <li>Microsoft PowerPoint</li>
+
+                    <li>MS Office</li>
+
+                    <li>Email Management</li>
+
+                    <li>Internet Applications</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    ◈
+                </div>
+
+
+                <h3>
+                    Operations
+                </h3>
+
+
+                <ul>
+
+                    <li>Time Management</li>
+
+                    <li>Shipment Follow-Up</li>
+
+                    <li>Transportation Coordination</li>
+
+                    <li>Load Information Handling</li>
+
+                    <li>Operational Support</li>
+
+                    <li>Problem Solving</li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="glass-card skill-card">
+
+                <div class="icon">
+                    ✓
+                </div>
+
+
+                <h3>
+                    Professional Skills
+                </h3>
+
+
+                <ul>
+
+                    <li>Attention to Detail</li>
+
+                    <li>Teamwork</li>
+
+                    <li>Adaptability</li>
+
+                    <li>Responsibility</li>
+
+                    <li>Quick Learning</li>
+
+                    <li>Working Under Pressure</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         EDUCATION
+    ================================================== -->
+
+    <section id="education">
+
+        <div class="section-title">
+
+            <span>
+                04 — Education
+            </span>
+
+
+            <h2>
+                Academic Background
+            </h2>
+
+
+            <p>
+                Continuing academic development alongside
+                professional experience.
+            </p>
+
+        </div>
+
+
+        <div class="education-container">
+
+
+            <div class="glass-card education-card">
+
+                <div class="education-icon">
+                    🎓
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Bachelor of Arts — B.A.
+                    </h3>
+
+
+                    <div class="institution">
+                        Sikh National College
+                    </div>
+
+
+                    <p>
+                        Currently Pursuing
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="glass-card education-card">
+
+                <div class="education-icon">
+                    📚
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Senior Secondary Education — 10+2
+                    </h3>
+
+
+                    <div class="institution">
+                        Sikh National Collegiate School
+                    </div>
+
+
+                    <p>
+                        Completed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROFESSIONAL STRENGTHS
+    ================================================== -->
+
+    <section id="strengths">
+
+        <div class="section-title">
+
+            <span>
+                05 — Strengths
+            </span>
+
+
+            <h2>
+                Professional Strengths
             </h2>
 
         </div>
 
 
+        <div class="strengths">
+
+
+            <div class="strength">
+                Strong Communication
+            </div>
+
+
+            <div class="strength">
+                Attention to Detail
+            </div>
+
+
+            <div class="strength">
+                Time Management
+            </div>
+
+
+            <div class="strength">
+                Problem Solving
+            </div>
+
+
+            <div class="strength">
+                Team Coordination
+            </div>
+
+
+            <div class="strength">
+                Adaptability
+            </div>
+
+
+            <div class="strength">
+                Responsible
+            </div>
+
+
+            <div class="strength">
+                Hardworking
+            </div>
+
+
+            <div class="strength">
+                Quick Learner
+            </div>
+
+
+            <div class="strength">
+                Organized
+            </div>
+
+
+            <div class="strength">
+                Professional
+            </div>
+
+
+            <div class="strength">
+                Punctual
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CAREER OBJECTIVE
+    ================================================== -->
+
+    <section id="objective">
+
+        <div class="section-title">
+
+            <span>
+                06 — Career
+            </span>
+
+
+            <h2>
+                Career Objective
+            </h2>
+
+        </div>
+
+
+        <div class="glass-card objective">
+
+            <p>
+                To build a successful long-term career in the freight,
+                logistics, transportation and dispatch industry by applying
+                practical dispatch experience, strong communication skills,
+                organizational abilities and a commitment to continuous
+                learning. Seeking opportunities that provide professional
+                growth while allowing me to contribute effectively to
+                efficient transportation and logistics operations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         LANGUAGES
+    ================================================== -->
+
+    <section id="languages">
+
+        <div class="section-title">
+
+            <span>
+                07 — Languages
+            </span>
+
+
+            <h2>
+                Communication
+            </h2>
+
+        </div>
+
+
+        <div class="language-grid">
+
+
+            <div class="language">
+
+                <strong>
+                    Punjabi
+                </strong>
+
+                <span>
+                    Native
+                </span>
+
+            </div>
+
+
+            <div class="language">
+
+                <strong>
+                    Hindi
+                </strong>
+
+                <span>
+                    Fluent
+                </span>
+
+            </div>
+
+
+            <div class="language">
+
+                <strong>
+                    English
+                </strong>
+
+                <span>
+                    Professional Working Proficiency
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+    <section
+        id="contact"
+        class="contact-section"
+    >
+
+        <div class="glass-card contact-card">
+
+
+            <div class="section-title">
+
+                <span>
+                    08 — Contact
+                </span>
+
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+            </div>
+
+
+            <p>
+                Interested in discussing professional opportunities,
+                logistics and dispatch roles, or collaboration?
+                Feel free to get in touch.
+            </p>
+
+
+            <div class="contact-details">
+
+
+                <div class="contact-item">
+                    📍 Punjab, India
+                </div>
+
+
+                <div class="contact-item">
+                    ☎ 7340954494
+                </div>
+
+
+                <div class="contact-item">
+                    ✉ lovepreetsingh0077@icloud.com
+                </div>
+
+
+            </div>
+
+
+            <div class="buttons">
+
+
+                <a
+                    href="mailto:lovepreetsingh0077@icloud.com"
+                    class="btn primary"
+                >
+                    ✉ &nbsp; Email Me
+                </a>
+
+
+                <a
+                    href="#home"
+                    class="btn secondary"
+                >
+                    ↑ &nbsp; Back to Top
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <h2>
+            Lovepreet Singh
+        </h2>
+
+
+        <div class="footer-line"></div>
+
+
         <p>
-            Interested in discussing professional opportunities,
-            logistics and dispatch roles, or collaboration?
-            Feel free to get in touch.
+            Freight Dispatcher • Logistics Coordinator • Dispatch Operations
         </p>
 
 
-        <div class="contact-details">
+        <p>
+            © 2026 Lovepreet Singh. All Rights Reserved.
+        </p>
 
-            <div class="contact-item">
-                📍 [City, Punjab, India]
-            </div>
-
-            <div class="contact-item">
-                ☎ [Phone Number]
-            </div>
-
-            <div class="contact-item">
-                ✉ [Email Address]
-            </div>
-
-        </div>
-
-
-        <div class="buttons">
-
-            <a
-                href="mailto:YOUR-EMAIL@example.com"
-                class="btn primary"
-            >
-                ✉ &nbsp; Email Me
-            </a>
-
-            <a
-                href="#home"
-                class="btn secondary"
-            >
-                ↑ &nbsp; Back to Top
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <h2>
-        Lovepreet Singh
-    </h2>
-
-    <div class="footer-line"></div>
-
-    <p>
-        Freight Dispatcher • Logistics Coordinator • Dispatch Operations
-    </p>
-
-    <p>
-        © 2026 Lovepreet Singh. All Rights Reserved.
-    </p>
-
-</footer>
+    </footer>
 
 
 </body>
+
 </html>
