@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lovepreet Singh | Freight Dispatcher</title>
+    <meta charset="UTF-8">
 
-<meta name="description"
-content="Lovepreet Singh - Freight Dispatcher, Logistics Coordinator and Dispatch Operations Professional.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description"
+        content="Lovepreet Singh - Freight Dispatcher, Logistics Coordinator and Dispatch Operations Professional.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#030817">
+
+    <title>Lovepreet Singh | Freight Dispatcher</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 
 <style>
 
-/* =====================================================
-   ROOT COLORS
-===================================================== */
+/* =========================================================
+   ROOT
+========================================================= */
 
 :root {
-    --bg-dark: #030817;
-    --bg-blue: #06132d;
-    --royal-blue: #123b7a;
-    --blue: #1e5dcc;
-    --bright-blue: #3d82ff;
-    --light-blue: #8db7ff;
+
+    --dark: #020714;
+    --navy: #06132d;
+    --navy2: #0a1d42;
+
+    --royal: #164da0;
+    --blue: #2874e8;
+    --bright: #5a98ff;
+
+    --light: #8db7ff;
 
     --white: #f5f8ff;
     --text: #c7d2e6;
     --muted: #8c9ab2;
 
-    --card: rgba(13, 35, 75, 0.48);
-    --border: rgba(110, 160, 255, 0.18);
+    --border: rgba(100,160,255,.18);
 
-    --gold: #d8b76a;
 }
 
 
-/* =====================================================
+/* =========================================================
    RESET
-===================================================== */
+========================================================= */
 
 * {
     margin: 0;
@@ -54,10 +69,15 @@ html {
 }
 
 body {
+
     font-family: "Inter", sans-serif;
+
     color: var(--white);
-    background: var(--bg-dark);
+
+    background: var(--dark);
+
     line-height: 1.7;
+
     overflow-x: hidden;
 }
 
@@ -67,11 +87,12 @@ a {
 }
 
 
-/* =====================================================
+/* =========================================================
    BACKGROUND
-===================================================== */
+========================================================= */
 
 body::before {
+
     content: "";
 
     position: fixed;
@@ -81,21 +102,22 @@ body::before {
     z-index: -3;
 
     background:
+
         radial-gradient(
             circle at 15% 20%,
-            rgba(29, 87, 180, 0.25),
+            rgba(29,87,180,.25),
             transparent 32%
         ),
 
         radial-gradient(
             circle at 85% 25%,
-            rgba(35, 100, 220, 0.16),
+            rgba(35,100,220,.16),
             transparent 30%
         ),
 
         radial-gradient(
             circle at 70% 80%,
-            rgba(19, 55, 120, 0.25),
+            rgba(19,55,120,.25),
             transparent 35%
         ),
 
@@ -109,6 +131,7 @@ body::before {
 
 
 body::after {
+
     content: "";
 
     position: fixed;
@@ -120,41 +143,40 @@ body::after {
     pointer-events: none;
 
     background-image:
+
         linear-gradient(
-            rgba(255,255,255,0.015) 1px,
+            rgba(255,255,255,.015) 1px,
             transparent 1px
         ),
+
         linear-gradient(
             90deg,
-            rgba(255,255,255,0.015) 1px,
+            rgba(255,255,255,.015) 1px,
             transparent 1px
         );
 
     background-size: 70px 70px;
-
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 85%
-    );
 }
 
 
-/* =====================================================
-   GENERAL SECTION
-===================================================== */
+/* =========================================================
+   SECTIONS
+========================================================= */
 
 section {
-    padding: 110px 8%;
+
     position: relative;
+
+    padding: 110px 8%;
 }
 
 
-/* =====================================================
+/* =========================================================
    HERO
-===================================================== */
+========================================================= */
 
 .hero {
+
     min-height: 100vh;
 
     display: flex;
@@ -174,6 +196,7 @@ section {
 
 
 .hero::before {
+
     content: "";
 
     position: absolute;
@@ -184,39 +207,43 @@ section {
 
     border-radius: 50%;
 
-    background: rgba(30, 93, 204, 0.14);
+    background:
+        rgba(30,93,204,.14);
 
     filter: blur(90px);
 
-    animation: bluePulse 6s ease-in-out infinite;
+    animation: pulse 6s ease-in-out infinite;
 }
 
 
 .hero-content {
+
     max-width: 1000px;
 
     position: relative;
 
     z-index: 2;
 
-    animation: heroFade 1.2s ease;
+    animation: fadeUp 1.2s ease;
 }
 
 
 .hero-tag {
+
     display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
 
     padding: 9px 20px;
 
+    margin-bottom: 25px;
+
     border-radius: 50px;
 
-    background: rgba(41, 91, 170, 0.15);
+    background:
+        rgba(41,91,170,.15);
 
-    border: 1px solid rgba(105, 158, 255, 0.28);
+    border:
+        1px solid
+        rgba(105,158,255,.28);
 
     color: #a9c7ff;
 
@@ -226,16 +253,16 @@ section {
 
     text-transform: uppercase;
 
-    margin-bottom: 25px;
-
     backdrop-filter: blur(12px);
 }
 
 
 .hero h1 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(48px, 8vw, 96px);
+    font-size:
+        clamp(48px,8vw,96px);
 
     line-height: 1.02;
 
@@ -248,9 +275,9 @@ section {
     background:
         linear-gradient(
             135deg,
-            #ffffff 10%,
-            #b9d2ff 50%,
-            #5f94ff 100%
+            #ffffff,
+            #b9d2ff,
+            #5f94ff
         );
 
     -webkit-background-clip: text;
@@ -260,7 +287,9 @@ section {
 
 
 .hero h2 {
-    font-size: clamp(18px, 3vw, 28px);
+
+    font-size:
+        clamp(18px,3vw,28px);
 
     font-weight: 400;
 
@@ -271,9 +300,10 @@ section {
 
 
 .hero p {
+
     max-width: 780px;
 
-    margin: auto auto 35px;
+    margin: 0 auto 35px;
 
     color: var(--muted);
 
@@ -281,14 +311,17 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    BUTTONS
-===================================================== */
+========================================================= */
 
 .buttons {
+
     display: flex;
 
     justify-content: center;
+
+    align-items: center;
 
     gap: 15px;
 
@@ -297,7 +330,6 @@ section {
 
 
 .btn {
-    position: relative;
 
     display: inline-flex;
 
@@ -315,53 +347,25 @@ section {
 
     font-weight: 600;
 
-    overflow: hidden;
+    transition: .35s ease;
 
-    transition: all 0.35s ease;
-}
-
-
-.btn::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-
-    left: -120%;
-
-    width: 70%;
-
-    height: 100%;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,0.3),
-            transparent
-        );
-
-    transform: skewX(-25deg);
-
-    transition: 0.65s;
-}
-
-
-.btn:hover::before {
-    left: 140%;
+    cursor: pointer;
 }
 
 
 .btn:hover {
-    transform: translateY(-4px);
+
+    transform:
+        translateY(-4px);
 
     box-shadow:
-        0 18px 45px rgba(0,0,0,0.35);
+        0 18px 45px
+        rgba(0,0,0,.35);
 }
 
 
 .btn.primary {
+
     color: white;
 
     background:
@@ -372,69 +376,74 @@ section {
             #1850a5
         );
 
-    border: 1px solid rgba(130,180,255,0.3);
+    border:
+        1px solid
+        rgba(130,180,255,.3);
 
     box-shadow:
-        0 12px 35px rgba(20,90,200,0.25);
+        0 12px 35px
+        rgba(20,90,200,.25);
 }
 
 
 .btn.secondary {
+
     color: #c7d8f7;
 
     background:
-        rgba(255,255,255,0.045);
+        rgba(255,255,255,.045);
 
     border:
-        1px solid rgba(120,165,240,0.22);
+        1px solid
+        rgba(120,165,240,.22);
 
     backdrop-filter: blur(12px);
 }
 
 
-/* =====================================================
+/* =========================================================
    SCROLL
-===================================================== */
+========================================================= */
 
 .scroll-down {
+
     position: absolute;
 
     bottom: 30px;
 
     left: 50%;
 
-    transform: translateX(-50%);
+    transform:
+        translateX(-50%);
 
     color: #7185a7;
 
     font-size: 10px;
 
     letter-spacing: 3px;
-
-    text-transform: uppercase;
 }
 
 
 .scroll-down span {
+
     display: block;
 
     width: 1px;
 
     height: 35px;
 
+    margin: 8px auto;
+
     background: #5079bd;
-
-    margin: 8px auto 0;
-
-    animation: scrollLine 1.8s infinite;
 }
 
 
-/* =====================================================
-   SECTION TITLES
-===================================================== */
+/* =========================================================
+   SECTION TITLE
+========================================================= */
 
 .section-title {
+
     text-align: center;
 
     margin-bottom: 60px;
@@ -442,9 +451,10 @@ section {
 
 
 .section-title span {
+
     display: block;
 
-    color: var(--light-blue);
+    color: var(--light);
 
     font-size: 11px;
 
@@ -457,17 +467,18 @@ section {
 
 
 .section-title h2 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(30px, 5vw, 46px);
+    font-size:
+        clamp(30px,5vw,46px);
 
     font-weight: 700;
-
-    letter-spacing: -1px;
 }
 
 
 .section-title p {
+
     max-width: 700px;
 
     margin: 14px auto 0;
@@ -478,16 +489,17 @@ section {
 }
 
 
-/* =====================================================
-   GLASS CARD
-===================================================== */
+/* =========================================================
+   GLASS CARDS
+========================================================= */
 
 .glass-card {
+
     background:
         linear-gradient(
             145deg,
-            rgba(18,55,115,0.42),
-            rgba(5,18,43,0.62)
+            rgba(18,55,115,.42),
+            rgba(5,18,43,.62)
         );
 
     border:
@@ -495,55 +507,58 @@ section {
 
     border-radius: 24px;
 
-    backdrop-filter: blur(22px);
-
-    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter:
+        blur(22px);
 
     box-shadow:
-        0 25px 70px rgba(0,0,0,0.25);
+        0 25px 70px
+        rgba(0,0,0,.25);
 
-    transition:
-        transform 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
+    transition: .35s ease;
 }
 
 
 .glass-card:hover {
-    transform: translateY(-7px);
+
+    transform:
+        translateY(-7px);
 
     border-color:
-        rgba(92,150,255,0.35);
+        rgba(92,150,255,.35);
 
     box-shadow:
-        0 30px 80px rgba(0,0,0,0.38),
-        0 0 30px rgba(25,91,200,0.08);
+        0 30px 80px
+        rgba(0,0,0,.38);
 }
 
 
-/* =====================================================
+/* =========================================================
    ABOUT
-===================================================== */
+========================================================= */
 
 .about-grid {
+
     max-width: 1200px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        repeat(2,1fr);
 
     gap: 30px;
 }
 
 
 .about-card {
+
     padding: 40px;
 }
 
 
 .about-card h3 {
+
     font-family: "Poppins", sans-serif;
 
     font-size: 23px;
@@ -553,6 +568,7 @@ section {
 
 
 .about-card p {
+
     color: #a7b5ca;
 
     font-size: 14px;
@@ -562,9 +578,11 @@ section {
 
 
 .highlight-box {
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        repeat(2,1fr);
 
     gap: 14px;
 
@@ -573,41 +591,44 @@ section {
 
 
 .highlight {
+
     padding: 20px;
 
     border-radius: 16px;
 
     background:
-        rgba(50,100,180,0.08);
+        rgba(50,100,180,.08);
 
     border:
-        1px solid rgba(100,150,230,0.10);
+        1px solid
+        rgba(100,150,230,.10);
 }
 
 
 .highlight strong {
+
     display: block;
 
     color: #8db7ff;
 
     font-size: 18px;
-
-    margin-bottom: 3px;
 }
 
 
 .highlight span {
+
     color: #788ba8;
 
     font-size: 11px;
 }
 
 
-/* =====================================================
+/* =========================================================
    EXPERIENCE
-===================================================== */
+========================================================= */
 
 .experience-container {
+
     max-width: 1050px;
 
     margin: auto;
@@ -615,6 +636,7 @@ section {
 
 
 .experience-card {
+
     padding: 45px;
 
     position: relative;
@@ -622,6 +644,7 @@ section {
 
 
 .experience-card::before {
+
     content: "";
 
     position: absolute;
@@ -642,16 +665,15 @@ section {
             #16458d,
             transparent
         );
-
-    box-shadow:
-        0 0 15px rgba(60,130,255,0.45);
 }
 
 
 .experience-header {
+
     display: flex;
 
-    justify-content: space-between;
+    justify-content:
+        space-between;
 
     gap: 20px;
 
@@ -662,6 +684,7 @@ section {
 
 
 .experience-header h3 {
+
     font-family: "Poppins", sans-serif;
 
     font-size: 25px;
@@ -669,15 +692,15 @@ section {
 
 
 .company {
+
     color: #80adff;
 
     font-size: 13px;
-
-    margin-top: 4px;
 }
 
 
 .current {
+
     height: fit-content;
 
     padding: 7px 15px;
@@ -685,10 +708,11 @@ section {
     border-radius: 50px;
 
     background:
-        rgba(49,130,255,0.10);
+        rgba(49,130,255,.10);
 
     border:
-        1px solid rgba(90,155,255,0.25);
+        1px solid
+        rgba(90,155,255,.25);
 
     color: #9bc0ff;
 
@@ -701,6 +725,7 @@ section {
 
 
 .experience-card > p {
+
     color: #a7b6ca;
 
     font-size: 14px;
@@ -710,9 +735,11 @@ section {
 
 
 .responsibilities {
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        repeat(2,1fr);
 
     gap: 12px 30px;
 
@@ -721,6 +748,7 @@ section {
 
 
 .responsibilities li {
+
     position: relative;
 
     padding-left: 20px;
@@ -732,6 +760,7 @@ section {
 
 
 .responsibilities li::before {
+
     content: "◆";
 
     position: absolute;
@@ -741,16 +770,15 @@ section {
     color: #4e8eff;
 
     font-size: 7px;
-
-    top: 3px;
 }
 
 
-/* =====================================================
+/* =========================================================
    SKILLS
-===================================================== */
+========================================================= */
 
 .skills-grid {
+
     max-width: 1100px;
 
     margin: auto;
@@ -758,18 +786,20 @@ section {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 20px;
 }
 
 
 .skill-card {
+
     padding: 30px;
 }
 
 
 .skill-card .icon {
+
     width: 50px;
 
     height: 50px;
@@ -785,21 +815,20 @@ section {
     color: #8db7ff;
 
     background:
-        rgba(40,100,200,0.12);
+        rgba(40,100,200,.12);
 
     border:
-        1px solid rgba(100,160,255,0.18);
+        1px solid
+        rgba(100,160,255,.18);
 
     margin-bottom: 20px;
 
     font-size: 20px;
-
-    box-shadow:
-        0 8px 25px rgba(10,50,120,0.15);
 }
 
 
 .skill-card h3 {
+
     font-family: "Poppins", sans-serif;
 
     font-size: 17px;
@@ -809,11 +838,13 @@ section {
 
 
 .skill-card ul {
+
     list-style: none;
 }
 
 
 .skill-card li {
+
     color: #93a3ba;
 
     font-size: 12px;
@@ -822,11 +853,12 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    EDUCATION
-===================================================== */
+========================================================= */
 
 .education-container {
+
     max-width: 950px;
 
     margin: auto;
@@ -834,6 +866,7 @@ section {
 
 
 .education-card {
+
     padding: 38px;
 
     display: flex;
@@ -847,6 +880,7 @@ section {
 
 
 .education-icon {
+
     min-width: 70px;
 
     height: 70px;
@@ -862,25 +896,26 @@ section {
     color: #91baff;
 
     background:
-        rgba(30,90,190,0.12);
+        rgba(30,90,190,.12);
 
     border:
-        1px solid rgba(100,160,255,0.18);
+        1px solid
+        rgba(100,160,255,.18);
 
     font-size: 27px;
 }
 
 
 .education-card h3 {
+
     font-family: "Poppins", sans-serif;
 
     font-size: 20px;
-
-    margin-bottom: 4px;
 }
 
 
 .institution {
+
     color: #78a8ff;
 
     font-size: 13px;
@@ -888,6 +923,7 @@ section {
 
 
 .education-card p {
+
     color: #8192ab;
 
     font-size: 12px;
@@ -896,11 +932,12 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    STRENGTHS
-===================================================== */
+========================================================= */
 
 .strengths {
+
     max-width: 1050px;
 
     margin: auto;
@@ -916,42 +953,30 @@ section {
 
 
 .strength {
+
     padding: 11px 20px;
 
     border-radius: 50px;
 
     background:
-        rgba(25,70,140,0.14);
+        rgba(25,70,140,.14);
 
     border:
-        1px solid rgba(90,145,235,0.17);
+        1px solid
+        rgba(90,145,235,.17);
 
     color: #a7bce0;
 
     font-size: 12px;
-
-    transition: 0.3s;
 }
 
 
-.strength:hover {
-    background:
-        rgba(35,100,210,0.20);
-
-    border-color:
-        rgba(100,165,255,0.32);
-
-    color: white;
-
-    transform: translateY(-3px);
-}
-
-
-/* =====================================================
-   CAREER OBJECTIVE
-===================================================== */
+/* =========================================================
+   OBJECTIVE
+========================================================= */
 
 .objective {
+
     max-width: 1000px;
 
     margin: auto;
@@ -963,6 +988,7 @@ section {
 
 
 .objective p {
+
     color: #a8b7ca;
 
     font-size: 14px;
@@ -971,11 +997,12 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    LANGUAGES
-===================================================== */
+========================================================= */
 
 .language-grid {
+
     max-width: 800px;
 
     margin: auto;
@@ -983,13 +1010,14 @@ section {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 20px;
 }
 
 
 .language {
+
     padding: 25px;
 
     text-align: center;
@@ -997,24 +1025,16 @@ section {
     border-radius: 20px;
 
     background:
-        rgba(18,55,115,0.18);
+        rgba(18,55,115,.18);
 
     border:
-        1px solid rgba(90,145,235,0.14);
-
-    transition: 0.3s;
-}
-
-
-.language:hover {
-    transform: translateY(-5px);
-
-    border-color:
-        rgba(95,155,255,0.3);
+        1px solid
+        rgba(90,145,235,.14);
 }
 
 
 .language strong {
+
     display: block;
 
     color: white;
@@ -1024,22 +1044,25 @@ section {
 
 
 .language span {
+
     color: #8091aa;
 
     font-size: 11px;
 }
 
 
-/* =====================================================
+/* =========================================================
    CONTACT
-===================================================== */
+========================================================= */
 
 .contact-section {
+
     padding-bottom: 80px;
 }
 
 
 .contact-card {
+
     max-width: 900px;
 
     margin: auto;
@@ -1051,6 +1074,7 @@ section {
 
 
 .contact-card > p {
+
     color: #8d9db6;
 
     font-size: 14px;
@@ -1060,6 +1084,7 @@ section {
 
 
 .contact-details {
+
     display: flex;
 
     justify-content: center;
@@ -1073,15 +1098,17 @@ section {
 
 
 .contact-item {
+
     padding: 12px 18px;
 
     border-radius: 50px;
 
     background:
-        rgba(255,255,255,0.035);
+        rgba(255,255,255,.035);
 
     border:
-        1px solid rgba(100,150,230,0.14);
+        1px solid
+        rgba(100,150,230,.14);
 
     color: #9fb0c9;
 
@@ -1089,24 +1116,27 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    FOOTER
-===================================================== */
+========================================================= */
 
 footer {
+
     padding: 45px 8%;
 
     text-align: center;
 
     background:
-        rgba(1,5,14,0.85);
+        rgba(1,5,14,.85);
 
     border-top:
-        1px solid rgba(90,145,235,0.12);
+        1px solid
+        rgba(90,145,235,.12);
 }
 
 
 footer h2 {
+
     font-family: "Poppins", sans-serif;
 
     font-size: 24px;
@@ -1114,6 +1144,7 @@ footer h2 {
 
 
 .footer-line {
+
     width: 55px;
 
     height: 2px;
@@ -1126,13 +1157,11 @@ footer h2 {
             #174b9b,
             #5a98ff
         );
-
-    box-shadow:
-        0 0 15px rgba(65,130,255,0.45);
 }
 
 
 footer p {
+
     color: #687991;
 
     font-size: 11px;
@@ -1141,13 +1170,14 @@ footer p {
 }
 
 
-/* =====================================================
+/* =========================================================
    ANIMATIONS
-===================================================== */
+========================================================= */
 
-@keyframes heroFade {
+@keyframes fadeUp {
 
     from {
+
         opacity: 0;
 
         transform:
@@ -1155,6 +1185,7 @@ footer p {
     }
 
     to {
+
         opacity: 1;
 
         transform:
@@ -1163,57 +1194,31 @@ footer p {
 }
 
 
-@keyframes bluePulse {
+@keyframes pulse {
 
-    0%,
-    100% {
-        transform: scale(1);
+    0%,100% {
 
-        opacity: 0.7;
+        transform:
+            scale(1);
+
+        opacity: .7;
     }
 
     50% {
-        transform: scale(1.15);
+
+        transform:
+            scale(1.15);
 
         opacity: 1;
     }
 }
 
 
-@keyframes scrollLine {
-
-    0% {
-        opacity: 0;
-
-        transform:
-            scaleY(0.3);
-
-        transform-origin: top;
-    }
-
-    50% {
-        opacity: 1;
-
-        transform:
-            scaleY(1);
-    }
-
-    100% {
-        opacity: 0;
-
-        transform:
-            scaleY(0.3);
-
-        transform-origin: bottom;
-    }
-}
-
-
-/* =====================================================
+/* =========================================================
    RESPONSIVE
-===================================================== */
+========================================================= */
 
-@media (max-width: 900px) {
+@media(max-width:900px) {
 
     section {
         padding: 85px 6%;
@@ -1224,13 +1229,13 @@ footer p {
     }
 
     .skills-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+            repeat(2,1fr);
     }
-
 }
 
 
-@media (max-width: 650px) {
+@media(max-width:650px) {
 
     section {
         padding: 75px 5%;
@@ -1246,13 +1251,10 @@ footer p {
 
     .buttons {
         flex-direction: column;
-
-        align-items: center;
     }
 
     .btn {
         width: 100%;
-
         max-width: 320px;
     }
 
@@ -1274,7 +1276,6 @@ footer p {
 
     .education-card {
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -1293,30 +1294,19 @@ footer p {
     .highlight-box {
         grid-template-columns: 1fr;
     }
-
-}
-
-
-/* =====================================================
-   SELECTION
-===================================================== */
-
-::selection {
-    background: #2769cf;
-
-    color: white;
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      HERO
-===================================================== -->
+========================================================= -->
 
 <section class="hero" id="home">
 
@@ -1326,13 +1316,16 @@ footer p {
             ◆ Freight & Logistics Professional
         </div>
 
+
         <h1>
             Lovepreet Singh
         </h1>
 
+
         <h2>
             Freight Dispatcher • Logistics Coordinator • Dispatch Operations
         </h2>
+
 
         <p>
             Dedicated and detail-oriented freight dispatch professional
@@ -1341,18 +1334,25 @@ footer p {
             driver communication, dispatch operations and logistics support.
         </p>
 
+
         <div class="buttons">
+
+            <!-- =================================================
+                 WORKING RESUME BUTTON
+                 IMPORTANT:
+                 Keep Lovepreet-Singh-Resume.png beside index.html
+            ================================================== -->
 
             <a
                 href="./Lovepreet-Singh-Resume.png"
                 class="btn primary"
+                download="Lovepreet-Singh-Resume.png"
                 target="_blank"
                 rel="noopener"
-                download="Lovepreet-Singh-Resume.png"
-                aria-label="Download Lovepreet Singh Resume"
             >
                 ↓ &nbsp; Download Resume
             </a>
+
 
             <a
                 href="#contact"
@@ -1362,13 +1362,6 @@ footer p {
             </a>
 
         </div>
-
-        <p id="resume-note"
-           style="display:none; margin-top:14px; color:#8db7ff; font-size:12px;">
-            Resume file not found. Upload
-            <strong>Lovepreet-Singh-Resume.png</strong> to the same GitHub
-            repository folder as <strong>index.html</strong>.
-        </p>
 
     </div>
 
@@ -1385,15 +1378,17 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      ABOUT
-===================================================== -->
+========================================================= -->
 
 <section id="about">
 
     <div class="section-title">
 
-        <span>01 — About Me</span>
+        <span>
+            01 — About Me
+        </span>
 
         <h2>
             Professional Profile
@@ -1416,11 +1411,13 @@ footer p {
                 About Lovepreet
             </h3>
 
+
             <p>
                 Lovepreet Singh is a dedicated freight dispatch and
                 logistics professional currently working with
                 Harjas Freight Dispatch Company.
             </p>
+
 
             <p>
                 His professional responsibilities involve supporting
@@ -1428,6 +1425,7 @@ footer p {
                 with drivers, monitoring shipment progress and
                 maintaining accurate dispatch information.
             </p>
+
 
             <p>
                 Alongside his professional career, he is currently
@@ -1445,6 +1443,7 @@ footer p {
                 Professional Focus
             </h3>
 
+
             <p>
                 Focused on developing a long-term career in the
                 transportation, freight, logistics and dispatch industry.
@@ -1452,6 +1451,7 @@ footer p {
 
 
             <div class="highlight-box">
+
 
                 <div class="highlight">
 
@@ -1504,6 +1504,7 @@ footer p {
 
                 </div>
 
+
             </div>
 
         </div>
@@ -1514,9 +1515,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      EXPERIENCE
-===================================================== -->
+========================================================= -->
 
 <section id="experience">
 
@@ -1539,7 +1540,6 @@ footer p {
 
 
     <div class="experience-container">
-
 
         <div class="glass-card experience-card">
 
@@ -1635,9 +1635,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      SKILLS
-===================================================== -->
+========================================================= -->
 
 <section id="skills">
 
@@ -1686,7 +1686,6 @@ footer p {
         </div>
 
 
-
         <div class="glass-card skill-card">
 
             <div class="icon">
@@ -1709,7 +1708,6 @@ footer p {
             </ul>
 
         </div>
-
 
 
         <div class="glass-card skill-card">
@@ -1736,7 +1734,6 @@ footer p {
         </div>
 
 
-
         <div class="glass-card skill-card">
 
             <div class="icon">
@@ -1761,7 +1758,6 @@ footer p {
         </div>
 
 
-
         <div class="glass-card skill-card">
 
             <div class="icon">
@@ -1784,7 +1780,6 @@ footer p {
             </ul>
 
         </div>
-
 
 
         <div class="glass-card skill-card">
@@ -1816,9 +1811,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      EDUCATION
-===================================================== -->
+========================================================= -->
 
 <section id="education">
 
@@ -1885,7 +1880,7 @@ footer p {
                 </div>
 
                 <p>
-                    Completed Senior Secondary Education (10+2).
+                    Completed
                 </p>
 
             </div>
@@ -1898,9 +1893,9 @@ footer p {
 
 
 
-<!-- =====================================================
-     PROFESSIONAL STRENGTHS
-===================================================== -->
+<!-- =========================================================
+     STRENGTHS
+========================================================= -->
 
 <section id="strengths">
 
@@ -1973,9 +1968,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      CAREER OBJECTIVE
-===================================================== -->
+========================================================= -->
 
 <section id="objective">
 
@@ -2010,9 +2005,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      LANGUAGES
-===================================================== -->
+========================================================= -->
 
 <section id="languages">
 
@@ -2076,11 +2071,12 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      CONTACT
-===================================================== -->
+========================================================= -->
 
-<section id="contact" class="contact-section">
+<section id="contact"
+         class="contact-section">
 
     <div class="glass-card contact-card">
 
@@ -2107,22 +2103,27 @@ footer p {
 
         <div class="contact-details">
 
+
             <div class="contact-item">
                 📍 Punjab, India
             </div>
+
 
             <div class="contact-item">
                 ☎ 7340954494
             </div>
 
+
             <div class="contact-item">
                 ✉ lovepreetsingh0077@icloud.com
             </div>
+
 
         </div>
 
 
         <div class="buttons">
+
 
             <a
                 href="mailto:lovepreetsingh0077@icloud.com"
@@ -2131,12 +2132,14 @@ footer p {
                 ✉ &nbsp; Email Me
             </a>
 
+
             <a
                 href="#home"
                 class="btn secondary"
             >
                 ↑ &nbsp; Back to Top
             </a>
+
 
         </div>
 
@@ -2146,9 +2149,9 @@ footer p {
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      FOOTER
-===================================================== -->
+========================================================= -->
 
 <footer>
 
@@ -2156,11 +2159,14 @@ footer p {
         Lovepreet Singh
     </h2>
 
+
     <div class="footer-line"></div>
+
 
     <p>
         Freight Dispatcher • Logistics Coordinator • Dispatch Operations
     </p>
+
 
     <p>
         © 2026 Lovepreet Singh. All Rights Reserved.
@@ -2169,28 +2175,6 @@ footer p {
 </footer>
 
 
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const resumeLink = document.querySelector(
-        'a[download="Lovepreet-Singh-Resume.png"]'
-    );
-    const resumeNote = document.getElementById("resume-note");
-
-    if (!resumeLink || !resumeNote) return;
-
-    fetch("./Lovepreet-Singh-Resume.png", {
-        method: "HEAD",
-        cache: "no-store"
-    }).then(function (response) {
-        if (!response.ok) {
-            resumeNote.style.display = "block";
-        }
-    }).catch(function () {
-        resumeNote.style.display = "block";
-    });
-});
-</script>
-
 </body>
+
 </html>
